@@ -1,0 +1,14 @@
+<div>
+  <div class="split left" cdkDropList [cdkDropListData]="dropArea" #dropArea="cdkDropList" (cdkDropListDropped)="compDropped($event)">
+    <div class="m-x-sm"><ng-template comp-directive></ng-template></div>
+  </div>
+  
+  <div class="split right" cdkDropList [cdkDropListConnectedTo]="dropArea">
+    <div style="padding-left:2%;">
+      <h3>Drag Items from the List!!</h3>
+      <div *ngFor="let cmp of compList" cdkDrag>
+        <p class="comp-list">{{cmp.data.name}}</p>
+      </div>
+    </div>
+  </div>
+</div>

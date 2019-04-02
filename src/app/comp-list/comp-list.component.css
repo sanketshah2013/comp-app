@@ -1,0 +1,4 @@
+.split{ height: 100%; position: fixed; }
+.left{ width:70%; left:0; border:1px solid green; }
+.right{ width:30%; right:0; overflow-y: scroll; border:1px solid yellow; }
+.comp-list{ background-color: #89c6fb; }
